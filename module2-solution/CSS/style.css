@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial, san-serif;
+	box-sizing: border-box; 
+}
+
+.content p {
+		font-size: 14px;
+		line-height: 17px;
+		padding: 30px 10px 10px 10px;
+	}
+
+.chicken-title {
+	background-color: #98f6b0;
+}
+
+.beef-title {
+	background-color: #ffd6b0;
+}
+
+.sushi-title {
+	background-color: #ccfd7f;
+}
+
+/***** For mobile *****/
+
+@media (max-width: 767px) {
+	.content {
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+	  	transform: translate(-50%, -50%);	 
+	}
+
+	.content h1 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.content div	{
+		position: relative;
+		background-color: #A9A9A9;
+		border: 2px solid #111;
+		height: 33.33%;
+		margin-bottom: 15px;
+	}
+
+	.content h3 {
+		position: absolute;
+		right: 0;
+		width: 33.33%;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 800;
+		padding: 2px 0 2px 0;
+		border-bottom: 1px solid #111;
+		border-left: 1px solid #111;
+	}
+}
+
+/***** For Tab *****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.content {
+		width: 95%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+	  	transform: translate(-50%, -50%);	 
+	}
+
+	.content h1 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.chicken {
+		width: 49%;
+		float: left;
+		position: relative;
+		background-color: #A9A9A9;
+		border: 2px solid #111;
+		margin-right: 13px;
+		margin-bottom: 12px;
+	}
+
+	.beef {
+		width: 49%;
+		float: left;
+		position: relative;
+		background-color: #A9A9A9;
+		border: 2px solid #111;
+	}
+
+	.sushi {
+		position: relative;
+		clear: both;
+		background-color: #A9A9A9;
+		border: 2px solid #111;
+	}
+
+	.content h3 {
+		position: absolute;
+		right: 0;
+		width: 33.33%;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 800;
+		padding: 2px 0 2px 0;
+		border-bottom: 1px solid #111;
+		border-left: 1px solid #111;
+	}
+
+	.sushi-title {
+		width: 16.5% !important;
+	}
+}
+
+/***** For Desktop *****/
+
+@media (min-width: 992px) {
+	.content {
+		width: 96%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+	  	transform: translate(-50%, -50%);	 
+	}
+
+	.content h1 {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.content div {
+		width: 32%;
+		float: left;
+		position: relative;
+		left: 15px;
+		background-color: #A9A9A9;
+		border: 2px solid #111;
+		margin-right: 10px;
+	}
+
+	.content h3 {
+		position: absolute;
+		right: 0;
+		width: 33.33%;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 800;
+		padding: 2px 0 2px 0;
+		border-bottom: 1px solid #111;
+		border-left: 1px solid #111;
+	}
+}
